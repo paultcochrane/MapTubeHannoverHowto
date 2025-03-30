@@ -22,6 +22,19 @@ my %WriteMakefileArgs = (
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'Map-Tube-Hannover-*' },
+    # rest of %WriteMakefileArgs content
+    META_MERGE => {
+        "meta-spec" => { version => 2 },
+        prereqs => {
+            test => {
+                recommends => {
+                    'Test::CheckManifest' => '0.9',
+                    'Test::Pod::Coverage' => '1.08',
+                    'Test::Pod' => '1.22',
+                },
+            },
+        },
+    },
 );
 
 # Compatibility with old versions of ExtUtils::MakeMaker
