@@ -1,0 +1,27 @@
+{
+    "name"  : "Hannover",
+    "lines" : {
+        "line" : [
+            {
+                "id" : "L1",
+                "name" : "Linie 1"
+            }
+        ]
+    },
+    "stations" : {
+        "station" : [
+            {
+                "id" : "H1",
+                "name" : "Hauptbahnhof",
+                "line" : "L1",
+                "link" : "H2"
+            },
+            {
+                "id" : "H2",
+                "name" : "Langenhagen",
+                "line" : "L1",
+                "link" : "H1"
+            }
+        ]
+    }
+}

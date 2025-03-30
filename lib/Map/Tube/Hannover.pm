@@ -4,6 +4,11 @@ use 5.006;
 use strict;
 use warnings;
 
+use Moo;
+use File::Share qw(dist_file);
+
+with 'Map::Tube';
+
 =head1 NAME
 
 Map::Tube::Hannover - The great new Map::Tube::Hannover!
@@ -35,19 +40,14 @@ if you don't export anything, such as for a purely object-oriented module.
 
 =head1 SUBROUTINES/METHODS
 
-=head2 function1
-
 =cut
 
-sub function1 {
-}
-
-=head2 function2
-
-=cut
-
-sub function2 {
-}
+has json => (
+    is => 'ro',
+    default => sub {
+        return dist_file('Map-Tube-Hannover', 'hannover-map.json')
+    }
+);
 
 =head1 AUTHOR
 
