@@ -5,6 +5,10 @@
             {
                 "id" : "L1",
                 "name" : "Linie 1"
+            },
+            {
+                "id" : "L7",
+                "name" : "Linie 7"
             }
         ]
     },
@@ -25,8 +29,8 @@
             {
                 "id" : "H3",
                 "name" : "Hauptbahnhof",
-                "line" : "L1",
-                "link" : "H2,H4"
+                "line" : "L1,L7",
+                "link" : "H2,H4,H7,H8"
             },
             {
                 "id" : "H4",
@@ -39,6 +43,30 @@
                 "name" : "Sarstedt",
                 "line" : "L1",
                 "link" : "H4"
+            },
+            {
+                "id" : "H6",
+                "name" : "Wettbergen",
+                "line" : "L7",
+                "link" : "H7"
+            },
+            {
+                "id" : "H7",
+                "name" : "Allerweg",
+                "line" : "L7",
+                "link" : "H3,H6"
+            },
+            {
+                "id" : "H8",
+                "name" : "Vier Grenzen",
+                "line" : "L7",
+                "link" : "H3,H9"
+            },
+            {
+                "id" : "H9",
+                "name" : "Misburg",
+                "line" : "L7",
+                "link" : "H8"
             }
         ]
     }
