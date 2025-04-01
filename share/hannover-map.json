@@ -12,15 +12,33 @@
         "station" : [
             {
                 "id" : "H1",
-                "name" : "Hauptbahnhof",
+                "name" : "Langenhagen",
                 "line" : "L1",
                 "link" : "H2"
             },
             {
                 "id" : "H2",
-                "name" : "Langenhagen",
+                "name" : "Kabelkamp",
                 "line" : "L1",
-                "link" : "H1"
+                "link" : "H1,H3"
+            },
+            {
+                "id" : "H3",
+                "name" : "Hauptbahnhof",
+                "line" : "L1",
+                "link" : "H2,H4"
+            },
+            {
+                "id" : "H4",
+                "name" : "Laatzen",
+                "line" : "L1",
+                "link" : "H3,H5"
+            },
+            {
+                "id" : "H5",
+                "name" : "Sarstedt",
+                "line" : "L1",
+                "link" : "H4"
             }
         ]
     }
