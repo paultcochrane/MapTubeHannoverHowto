@@ -4,11 +4,13 @@
         "line" : [
             {
                 "id" : "L1",
-                "name" : "Linie 1"
+                "name" : "Linie 1",
+                "color" : "red"
             },
             {
                 "id" : "L7",
-                "name" : "Linie 7"
+                "name" : "Linie 7",
+                "color" : "blue"
             }
         ]
     },
