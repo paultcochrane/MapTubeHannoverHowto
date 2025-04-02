@@ -16,6 +16,11 @@
                 "id" : "L4",
                 "name" : "Linie 4",
                 "color" : "#f9a70c"
+            },
+            {
+                "id" : "L10",
+                "name" : "Linie 10",
+                "color" : "PaleGreen"
             }
         ]
     },
@@ -37,7 +42,8 @@
                 "id" : "H3",
                 "name" : "Hauptbahnhof",
                 "line" : "L1,L7",
-                "link" : "H2,H8,H12"
+                "link" : "H2,H8,H12",
+                "other_link" : "Street:H17"
             },
             {
                 "id" : "H4",
@@ -104,6 +110,25 @@
                 "name" : "Roderbruch",
                 "line" : "L4",
                 "link" : "H13"
+            },
+            {
+                "id" : "H15",
+                "name" : "Ahlem",
+                "line" : "L10",
+                "link" : "H16"
+            },
+            {
+                "id" : "H16",
+                "name" : "Leinaustrasse",
+                "line" : "L10",
+                "link" : "H15,H17"
+            },
+            {
+                "id" : "H17",
+                "name" : "Hauptbahnhof/ZOB",
+                "line" : "L10",
+                "link" : "H16",
+                "other_link" : "Street:H3"
             }
         ]
     }
